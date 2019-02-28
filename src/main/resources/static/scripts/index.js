@@ -16,6 +16,14 @@ let error = $(".error");
 let navLink = $("#nav-link");
 let thirdButton = 0;
 
+//Listen for enter key down and perform search when enter is pressed.
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+    	currentPageNumber = 1;
+    	doSearch();
+    }
+});
+
 //Performs a new search when sort-order is changed
 sortMenuSelect.change(function () {
     doSearch();

@@ -11,6 +11,10 @@ public class Query {
 	public String sortOrder;
 	public String pageNumber;
 	
+	public Query() {
+		
+	}
+	
 	public Query(String query, String language, String sort, String sortOrder, String pageNumber) {
 		super();
 		this.query = query;
